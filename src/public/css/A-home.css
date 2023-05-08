@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1530 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  .snip1530 *,
+.snip1530 *:before,
+.snip1530 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1530:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1530 img {
+  max-width: 100%;
+  height: 300px;
+  vertical-align: top;
+}
+
+.snip1530 .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snip1530 a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.snip1530 a i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+.snip1530 a i:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.snip1530:hover:before,
+.snip1530.hover:before {
+  opacity: 0.5;
+}
+
+.snip1530:hover a,
+.snip1530.hover a {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.snip1530:hover a:nth-child(2),
+.snip1530.hover a:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.snip1530:hover a:nth-child(3),
+.snip1530.hover a:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.product-information .sale{
+    position: absolute;
+    top:20px;
+    right: 10px;
+    color: red;
+    text-transform: capitalize;
+}
+/* mo ta */
+.back-img{
+  width: 100%;
+  height: 500px;
+  background-size: 100% 500px;
+  background-image: url('../images/product-single-1.jpg');
+  background-repeat: no-repeat;
+}
+.clients .icon-1 ,.clients .icon-2,.clients .icon-3,.clients .icon-4 {
+  width: 200px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.6); 
+  margin: 50px; 
+  text-align: center; 
+  line-height: 50px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+

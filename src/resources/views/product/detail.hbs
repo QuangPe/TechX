@@ -1,0 +1,724 @@
+<div id="page">
+		<div class="mywork">
+			<!-- Product Detail Part -->	
+			<div class="product-container">
+				<!-- Left Column -->
+				<div class="left-column">
+					<div class="product-img">
+						<img id="main-img" src="/images/product-details-images/Product-detail-AC-01-01.jpg">
+					</div>
+					<div class="nav">
+						<img onclick="change_img(this)"src="/images/product-details-images/Product-detail-AC-01-01.jpg">
+						<img onclick="change_img(this)"src="/images/product-details-images/Product-detail-AC-01-02.jpg">
+						<img onclick="change_img(this)"src="/images/product-details-images/Product-detail-AC-01-03.jpg">
+						<img onclick="change_img(this)"src="/images/product-details-images/Product-detail-AC-01-04.jpg">
+					</div>
+				</div>
+
+				<!-- Right Column -->
+				<div class="right-column">
+					<!-- Product Description -->
+					<div class="product-description">
+						<div class="product-types"><a href="/product-type-ac.html">Air Conditioner</a></div>
+						<div class="product-brands"><a href="/product-category-bandd.html">BLACK+DECKER</a></div>
+
+						<h1>8,000 BTU Window Air Conditioner</h1>
+						<p>
+							This BLACK+DECKER 8000 BTU window air conditioner is a must-have for instant cooling relief when you need it in any room in your home. Bedrooms, living rooms, home offices and ideal for apartments—this small window air conditioner is a perfect addition when the warm weather months roll in. With a high-quality compressor offering 8,000 chilling BTUs, you can circulate air with the fan only function or cool a room up to 350 square feet. This window unit uses R32 refrigerant which has zero impact on the ozone layer, so you can stay comfortable indoors without harming the planet. 
+						</p>
+						<div><a href="/WordToDownload/AC_01.docx">Click here to download this item information with more details</a></div>
+					</div>
+					
+					<!-- Product Configuration -->
+					<div class="product-configuration">
+						<!-- Product color -->
+						<div class="color-choose">
+							<div>Color:</div>
+							<div class="color-field-group">
+								<input type="radio" name="radio1" id="white" class="color-radio-field" onchange="productdetailchangeconfig()" checked>
+								<label for="white" class="radio-label-white"></label>
+							</div>
+							<div class="color-field-group">
+								<input type="radio" name="radio1" id="gray" class="color-radio-field" onchange="productdetailchangeconfig()">
+								<label for="gray" class="radio-label-gray"></label>
+							</div>
+							<div class="color-field-group">
+								<input type="radio" name="radio1" id="black" class="color-radio-field" onchange="productdetailchangeconfig()">
+								<label for="black" class="radio-label-black"></label>
+							</div>
+						</div>
+						<!-- Other config -->
+						<div class="other-choose">
+							<div>Other:</div>
+							<div class="other-field-group">
+								<input type="radio" name="radio2" id="choice-1" class="other-radio-field" onchange="productdetailchangeconfig()" checked>
+								<label for="choice-1" class="radio-label-choice">Choice 1</label>
+							</div>
+							<div class="other-field-group">
+								<input type="radio" name="radio2" id="choice-2" class="other-radio-field" onchange="productdetailchangeconfig()">
+								<label for="choice-2" class="radio-label-choice">Choice 2</label>
+							</div>
+							<div class="other-field-group">
+								<input type="radio" name="radio2" id="choice-3" class="other-radio-field" onchange="productdetailchangeconfig()">
+								<label for="choice-3" class="radio-label-choice">Choice 3</label>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Product Pricing -->
+					<div class="product-price">
+						<span id="the499">499.99$</span>
+						<input type="number" name="quantity" min="1" max="999" value="1" id="item-quantity" onchange="testOnChange()">
+						<span><a href="#" class="cart-button" onclick="productdetailaddtocart()">Add to cart</a></span>
+					</div>
+				</div>
+			</div>	
+			<hr>
+
+			<!-- Customer Reviews -->
+			<div class="customer-reviews">
+				<div class="stars-reviews">
+					<h3>Stars Reviews</h3>
+					<div class="stars-container">
+						<div class="stars-text">
+							<div>5 Stars</div><br>
+							<div class="progress-bar">
+								<div class="line1"><span>67%</span></div>
+							</div><br>
+
+							<div>4 Stars</div><br>
+							<div class="progress-bar">
+								<div class="line2"><span>15%</span></div>
+							</div><br>
+
+							<div>3 Stars</div><br>
+							<div class="progress-bar">
+								<div class="line3"><span>7%</span></div>
+							</div><br>
+				
+							<div>2 Stars</div><br>
+							<div class="progress-bar">
+								<div class="line4"><span>4%</span></div>
+							</div><br>
+				
+							<div>1 Stars</div><br>
+							<div class="progress-bar">
+								<div class="line5"><span>7%</span></div>
+							</div><br>
+						</div>
+					</div>
+				</div>
+
+				<div class="comments-reviews">
+					<h3>Reviews of Customers </h3>
+					<div class="tabs">
+						<input type="radio" class="tabs-radio" name="tabs-example" id="tab5" checked>
+						<label for="tab5" class="tabs-label">5 Stars</label>
+						<div class="tabs-content">
+							<div class="person-show-hide-3">
+								<div class="person-1">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-1.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Yuzuka Rei</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct1()" id="heart-icon-btn-1" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										This is a very good ac. I was a little worried at first because it's not that big. But it does a really big job. Easy to install did it by myself. Took no time. I heard someone say that it's very loud. It is a little loud. But I do not have to put my TV up to Max volume. And it drowns out the outside noise which I kind of like. I also saw that someone puts that it keeps turning off and it won't stay on. All you have to do is take it off energy saving mode and it'll stay on and never go off.
+									</div>
+								</div>
+								<div class="person-2">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-2.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Ijuuin Shinobu</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct2()" id="heart-icon-btn-2" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										Its an air conditioner. Its gonna be slightly noisy. And when did we become snobby because a remote doesnt have a battery? Get 1 at the dollar tree. You get 2 batteries and they work great. My apartment is about 900 sq feet. And living room kitchen is about half that. And this baby actually keeps it so cool. The best part for me was. I had an older ac and my light bill was about 500 a month. So very excited to see my bill from this year to next. To see the difference in energy consumption.
+									</div>
+								</div>
+								<span class="show-hide-dots">...</span>
+								<span class="person-show">
+									<div class="person-3">
+										<div class="avatar-and-name">
+											<div class="avatar-person">
+												<img src="images/product-details-images/avatar-person-3.jpg" alt="avatar">
+											</div>
+											<div class="person-header">
+												<b class="name-person">Gaius Octavius</b>
+												<div>
+													<i class="fa fa-star checked"></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+												</div>
+											</div>
+											<div class="heart-icon-buttons">
+												<div onclick="heartIconFunct3()" id="heart-icon-btn-3" class="heart-icon-btn-class fas fa-heart"></div>    
+											</div>
+										</div>
+										<div class="comment">
+											Houston Texas has 10 months of 90° plus weather. My home AC went out in August and it was 90° to 100° inside of my house. So I bought this as a stopgap and Amazon delivered it in only a day or two. It cool down the whole living room and kitchen of the house no problem. It also made the house livable. Without an air conditioner in Houston you just can't live. I can recommend this as a purchase. It worked great for me. Marko.
+										</div>
+									</div>
+								</span>
+							</div><br>
+							<a class="click-read-more-3">More Comments</a>
+						</div>
+						
+						<input type="radio" class="tabs-radio" name="tabs-example" id="tab4">
+						<label for="tab4" class="tabs-label">4 Stars</label>
+						<div class="tabs-content">
+							<div class="person-show-hide-6">
+								<div class="person-1">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-4.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Erik</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct4()" id="heart-icon-btn-4" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										This is an excellent unit and does an efficient job cooling my large high-ceilinged bedroom. The remote is the typical low end remote that you get with most AC units nowadays. However, the battery is not included. Furthermore, the battery type indicated in the user manual is not the right size. You’re going to need a CR 2025 battery, so be sure to order one.
+									</div>
+								</div>
+								<div class="person-2">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-5.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Kakeru Shishi</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct5()" id="heart-icon-btn-5" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										The ac came dented in a few spots. (See pictures) When I opened the front cover, the side clip was also broken. It’s a bummer to have to go through the return process as I am about to give birth (2 weeks left) and had to hire someone to install it for me. That said, the AC seems to be working (did a test run, will update when I use it officially) which is another reason why I don’t want to put myself through the hassle of the return process (packing it and waiting for the other to come in, calling the guy I hired to instal the new one). All that aside, it’s not the company’s fault but the delivery, still it’s something I have to go through after paying quite a bit for the AC. Maybe adding more padding to future orders will help minimize this issue.
+									</div>
+								</div>
+								<span class="show-hide-dots">...</span>
+								<span class="person-show">
+									<div class="person-3">
+										<div class="avatar-and-name">
+											<div class="avatar-person">
+												<img src="images/product-details-images/avatar-person-6.jpg" alt="avatar">
+											</div>
+											<div class="person-header">
+												<b class="name-person">Mayerling</b>
+												<div>
+													<i class="fa fa-star checked"></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star" ></i>
+												</div>
+											</div>
+											<div class="heart-icon-buttons">
+												<div onclick="heartIconFunct6()" id="heart-icon-btn-6" class="heart-icon-btn-class fas fa-heart"></div>    
+											</div>
+										</div>
+										<div class="comment">
+											Remote doesn't work. I contacted Black and Decker. After talking to 2 different "departments " I was told they would email directions to get it replaced. I never received that email. Not sure it's worth the hassle. Of course I'm sure they know that.
+										</div>
+									</div>
+								</span>
+							</div><br>
+							<a class="click-read-more-6">More Comments</a>
+						</div>
+				
+						<input type="radio" class="tabs-radio" name="tabs-example" id="tab3" >
+						<label for="tab3" class="tabs-label">3 Stars</label>
+						<div class="tabs-content">
+							<div class="person-show-hide-9">
+								<div class="person-1">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-7.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Quasimodo</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct7()" id="heart-icon-btn-7" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										It stoped blowing cold air two weeks after using it. While under warranty it's still going to take 5- 10 weeks to get it replaced after they receive what's needed in the mail..meanwhile it's hot a.f In Texas with zero a.c
+									</div>
+								</div>
+								<div class="person-2">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-8.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Mudkips</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct8()" id="heart-icon-btn-8" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										Came badly dented, box not damaged. This had clearly been installed and returned and sent back out. It works so I’ll keep it as it’s just going in a camper. But don’t feel I should have paid full price for a refurbished AC unit.
+									</div>
+								</div>
+								<span class="show-hide-dots">...</span>
+								<span class="person-show">
+									<div class="person-3">
+										<div class="avatar-and-name">
+											<div class="avatar-person">
+												<img src="images/product-details-images/avatar-person-9.jpg" alt="avatar">
+											</div>
+											<div class="person-header">
+												<b class="name-person">Torchic</b>
+												<div>
+													<i class="fa fa-star checked"></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+												</div>
+											</div>
+											<div class="heart-icon-buttons">
+												<div onclick="heartIconFunct9()" id="heart-icon-btn-9" class="heart-icon-btn-class fas fa-heart"></div>    
+											</div>
+										</div>
+										<div class="comment">
+											Falsely Advertised, this Unit only covers up to 500 Square Ft. I might just send it back. I waited 2 weeks for this. I need something that actually covers up to 700 Square Ft.
+										</div>
+									</div>
+								</span>
+							</div><br>
+							<a class="click-read-more-9">More Comments</a>
+						</div>
+				
+						<input type="radio" class="tabs-radio" name="tabs-example" id="tab2" >
+						<label for="tab2" class="tabs-label">2 Stars</label>
+						<div class="tabs-content">
+							<div class="person-show-hide-12">
+								<div class="person-1">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-10.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Chocobo</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct10()" id="heart-icon-btn-10" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										The good news is that it blows super cold. Unfortunately, that is the ONLY good thing about it.
+
+										The remote is useless! If you can't read the display on the front of the A/C unit, you have no idea what's going on. There is no "cool" or "fan" button...just a "mode" button which scrolls through a series of options, but again, if you can't read the display, you don't know what mode you're in.
+
+										It is LOUD!!!! I avoid using it because of the noise level. It sounds like an 18-wheeler is idling in your room. I am not exaggerating. It's REALLY LOUD! If you try to run it while you're watching TV, be prepared to raise your volume to the max!
+
+										Also, it shuts off even when it's in "cool" mode. The "cool" mode should keep it blowing and the "auto" mode should use the thermostat. There is an "energy saver" mode, but when it is NOT on, the unit still stops blowing....dead quiet, but panel still illuminated. You have to lower the temp to get it to kick back on.
+
+										This A/C is basically a disaster of a product all the war around and I am so sorry I chose it!
+
+										Lastly, it was delivered upside down (thank you, UPS), which is not good for an A/C. Of course this isn't the manufacturer's fault, but just a warning so that if you decide to ignore this review and order anyway, be sure to return it if it is delivered upside down. The box has a warning on it about this: "THIS SIDE UP-DO NOT TURN BOX ON IT'S SIDE." Had I not paid $100 to have it installed, I would have returned it. I'm not an air conditioner engineer, but this may have led to the noise problem. It doesn't help with the ridiculous remote, though.
+									</div>
+								</div>
+								<div class="person-2">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-11.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Javert</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct11()" id="heart-icon-btn-11" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										Arrived dented which seems to be a pattern. The instruction manual was useless. Had to look up a video for a different unit to understand what it was trying to depict. Images were TINY and vague. Written descriptions of steps were vague and unhelpful.
+
+										We had to get very creative in order to install in our window, and it took over 2 hours. But, now that it is installed, it does work well.
+
+										Buy a different brand.
+									</div>
+								</div>
+								<span class="show-hide-dots">...</span>
+								<span class="person-show">
+									<div class="person-3">
+										<div class="avatar-and-name">
+											<div class="avatar-person">
+												<img src="images/product-details-images/avatar-person-12.jpg" alt="avatar">
+											</div>
+											<div class="person-header">
+												<b class="name-person">Confrontation</b>
+												<div>
+													<i class="fa fa-star checked"></i>
+													<i class="fa fa-star checked" ></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+												</div>
+											</div>
+											<div class="heart-icon-buttons">
+												<div onclick="heartIconFunct12()" id="heart-icon-btn-12" class="heart-icon-btn-class fas fa-heart"></div>    
+											</div>
+										</div>
+										<div class="comment">
+											Easy to install, however it didn’t cool like an A/C should. I had an LG unit before and you can feel cold air through my entire apartment. I thought I’d give this brand a try because it was going to her here the quickest. The fan is very powerful and blows a lot of air, but it isn’t cold. I only lasted one night with it before deciding to return.
+										</div>
+									</div>
+								</span>
+							</div><br>
+							<a class="click-read-more-12">More Comments</a>
+						</div>
+				
+						<input type="radio" class="tabs-radio" name="tabs-example" id="tab1">
+						<label for="tab1" class="tabs-label">1 Stars</label>
+						<div class="tabs-content">
+							<div class="person-show-hide-15">
+								<div class="person-1">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-13.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Fantine</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct13()" id="heart-icon-btn-13" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										Received damaged coils on back smashed , seller not easy to work with , box destroyed in shipment so I installed it , super loud be prepared to turn tv all the way up , my house is small doesn't even cool the house its on 66 constantly just to keep room it is in cool . seller will take it back as soon as I find a new box it has a 1 year warranty so luckily I purchased recently .I purchased based on all the good reviews im sorry I did . Styrofoam is the inside of unit also I don't like that !
+									</div>
+								</div>
+								<div class="person-2">
+									<div class="avatar-and-name">
+										<div class="avatar-person">
+											<img src="images/product-details-images/avatar-person-14.jpg" alt="avatar">
+										</div>
+										<div class="person-header">
+											<b class="name-person">Doraemon</b>
+											<div>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+												<i class="fa fa-star" ></i>
+											</div>
+										</div>
+										<div class="heart-icon-buttons">
+											<div onclick="heartIconFunct14()" id="heart-icon-btn-14" class="heart-icon-btn-class fas fa-heart"></div>    
+										</div>
+									</div>
+									<div class="comment">
+										Doesn't work very well. It doesn't blow very cold air. I was replacing an 8000 btu ac with this 10,000 btu ac. The other brand which was smaller worked much better. If you buy this you will regret it.
+									</div>
+								</div>
+								<span class="show-hide-dots">...</span>
+								<span class="person-show">
+									<div class="person-3">
+										<div class="avatar-and-name">
+											<div class="avatar-person">
+												<img src="images/product-details-images/avatar-person-15.jpg" alt="avatar">
+											</div>
+											<div class="person-header">
+												<b class="name-person">Nobita</b>
+												<div>
+													<i class="fa fa-star checked"></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+													<i class="fa fa-star" ></i>
+												</div>
+											</div>
+											<div class="heart-icon-buttons">
+												<div onclick="heartIconFunct15()" id="heart-icon-btn-15" class="heart-icon-btn-class fas fa-heart"></div>    
+											</div>
+										</div>
+										<div class="comment">
+											Bought in June remote stopped working. Power button on AC unit stopped working have to unplug temp or no buttons work
+										</div>
+									</div>
+								</span>
+							</div><br>
+							<a class="click-read-more-15">More Comments</a>
+						</div>
+					</div>
+					<div class="new-comment-area">
+						<form>
+							<b>Your comment:</b>
+							<input type="hidden" id="rating" name="rating" value="-1">
+							<div class="rating">
+								<i class="ratings_stars fa fa-star" data-rating="1" id="rate-1-star" ></i>
+								<i class="ratings_stars fa fa-star" data-rating="2" id="rate-2-star" ></i>
+								<i class="ratings_stars fa fa-star" data-rating="3" id="rate-3-star" ></i>
+								<i class="ratings_stars fa fa-star" data-rating="4" id="rate-4-star" ></i>
+								<i class="ratings_stars fa fa-star" data-rating="5" id="rate-5-star" ></i>
+							</div>
+							<textarea id="new-comment"></textarea>
+							<a id="submit-button" onclick="clickrs(0)">Submit</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<!-- Related Items Part -->
+			<div class="related-items">
+				<div><b>Products related to this item:</b></div>
+				<div class="related-item-carousel">
+					<div class="slide-container-area">
+						<div alt="left" id="slide-left-1" class="arrow fas fa-caret-left"></div>
+			
+						<section class="slide-container" id="related-item-slider-1">
+							<div class="item-cards-1">	
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="images/product-details-images/Product-detail-AC-02-01.jpg"></div>
+								<p>24,500 Window-Mounted Air Conditioner</p>	
+								<div class="related-item-product-price">
+									<a href="/product-detail-AC-02.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-03-01.jpg"></div>
+								<p>5000 BTU Window-Mounted Air Conditioner</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-AC-03.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-04-01.jpg"></div>
+								<p>5000 BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-AC-04.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-05-01.jpg"></div>
+								<p>14500 BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-AC-05.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-06-01.jpg"></div>
+								<p>6000BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a href="/product-detail-AC-06.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-07-01.jpg"></div>
+								<p>14,000 BTU Through-The-Wall Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a href="/product-detail-AC-07.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00001 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00002 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00003 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00004 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+						</section>
+			
+						<div alt="right" id="slide-right-1" class="arrow fas fa-caret-right"></div>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<!-- Related Brands Part -->
+			<div class="related-brands">
+				<div><b>Products with same brand:</b></div>
+				<div class="related-item-carousel">
+					<div class="slide-container-area">
+						<div alt="left" id="slide-left-2" class="arrow fas fa-caret-left"></div>
+			
+						<section class="slide-container" id="related-item-slider-2">
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="images/product-details-images/Product-detail-F-01-01.jpg"></div>
+								<p>1,500-Watt Personal Desktop Heater</p>	
+								<div class="related-item-product-price">
+									<a href="/product-detail-FS-01.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-F-02-01.jpg"></div>
+								<p>16 Inches Stand Fan with Remote</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-FS-02.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-W-02-01.jpg"></div>
+								<p>Small Portable Washer</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-WM-02.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-IR-02-01.jpg"></div>
+								<p>Light 'N Easy Compact Steam Iron</p>
+								<div class="related-item-product-price">
+									<a href="/product-detail-IS-02.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-04-01.jpg"></div>
+								<p>5000 BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a href="/product-detail-AC-04.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-05-01.jpg"></div>
+								<p>14500 BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a href="/product-detail-AC-05.html"><button class="button-price">$499.99</button></a>
+
+								</div>
+							</div>
+							<div class="item-cards-2">
+								<div class="forhovertooltip" data-tooltip="Buy me!"><img src="/images/product-details-images/Product-detail-AC-06-01.jpg"></div>
+								<p>6000BTU Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a href="/product-detail-AC-06.html"><button class="button-price">$499.99</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00001 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00002 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+							<div class="item-cards-1">
+								<div class="fornonehovertooltip"><img src="/images/product-details-images/sold-out-img.png"></div>
+								<p>Black+Decker AC00003 Window Air Conditioner</p>
+								<div class="related-item-product-price">	
+									<a><button class="button-price-off" disabled>Sold out</button></a>
+								</div>
+							</div>
+						</section>
+			
+						<div alt="right" id="slide-right-2" class="arrow fas fa-caret-right"></div>
+					</div>
+				</div>
+			</div>
+		</div>

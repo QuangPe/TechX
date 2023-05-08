@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "admin",
+        "first_name": "admin",
+        "last_name": "admin",
+        "phone": "0123456789",
+        "email": "admin@admin",
+        "address": "Dist 10 HCM",
+        "city": "HCM"
+    }
+]

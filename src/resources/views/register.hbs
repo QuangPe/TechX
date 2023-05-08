@@ -1,0 +1,43 @@
+<div class="namquang">
+    <div class="backround-logis">
+        <section class="nam-regback">
+            <div class="container_nam">
+                <h1><a href="/login"><span style="font-size: 15px; font-weight: bolder;">Login</span></a><span>|</span><a href="register"><span style="font-size: 15px; font-weight: bolder;">Register</span></a></h1>
+                <form action="/register/request" method="POST">
+                    <div class="form">
+                        <div class="new">
+                            <div>
+                                <input type="text" placeholder="Username" name="username">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Password" name="password">
+                            </div>
+                            <div>
+                                <input type="confirmpassword" placeholder="Confirm Password" name="confirmpassword">
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Invalid username or password</h1>
+                    <div id="btn1">
+                        <button> Register</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('form').submit(function(event) {
+            var password = $('input[name="password"]').val();
+            var confirmPassword = $('input[name="confirmpassword"]').val();
+            
+            if (password != confirmPassword) {
+                $('#password-mismatch').show(); // show the warning message
+                event.preventDefault(); // prevent the form from submitting
+            }
+        });
+    });
+
+</script>

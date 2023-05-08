@@ -1,0 +1,61 @@
+<nav class="fh5co-nav" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-2">
+                <div id="fh5co-logo"><a href="/"> 
+                    <img src="images/Quang logo.jpg" height="30px" weight="30px">&nbsp; La Imperial.</a></div>
+            </div>
+            <div class="col-md-5 col-xs-5 text-center menu-1">
+                
+                <div class="input-group mb-4 border rounded-pill p-1">
+                    <input type="search" placeholder="Nhập từ bạn cần tìm?" aria-describedby="button-addon3" class="form-control border-0 bg-none">
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center;">
+                <div class="col-md-1 col-xs-1">
+                    <i class="fa-solid fa-cart-shopping" style="color: #511f1f;"></i>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+                {{#if _loggedIn}}
+                <ul>
+                    <li>Welcome, {{_user.name}}!</li>
+                    <li><a href="/logout">Log out</a></li>
+                </ul>
+                {{else}}
+                <ul>
+                    <li class="login"><a href="/login"><span style="font-weight: bold; color: white">Login</span></a></li>
+                    <li class="register"><a href="/register"><span style="font-weight: bold;">Register</span></a></li>
+                </ul>
+                {{/if}}
+            </div>
+        </div>
+        <div class="col-sm-12" style="text-align: center; align-items: center;">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="has-dropdown" style="height: 10%; width: 10%;">
+                    <a href="/product/page/1">Shop</a>
+                    <ul class="dropdown">
+                        <li class="Qtitle">Air Conditioners and Fans</li>
+                        <li><a href="product-type-ac.html">Air Conditioners</a></li>
+                        <li><a href="product-type-fan.html">Fans</a></li>
+                        <li class="Qtitle">TVs and Stereo Systems</li>
+                        <li><a href="product-type-tv.html">TVs</a></li>
+                        <li><a href="product-type-stereo.html">Stereo systems</a></li>
+                        <li class="Qtitle">Washing machines and Ironings</li>
+                        <li><a href="product-type-washer.html">Washing machines</a></li>
+                        <li><a href="product-type-ironing.html">Ironing</a></li>
+                    </ul>
+                </li>
+                {{!-- <li><a href="product-compare.html">Compare</a></li> --}}
+                <li class="has-dropdown">
+                    <a href="/contact">Contact</a>
+                </li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

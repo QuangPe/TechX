@@ -1,0 +1,690 @@
+.slider-nam {
+  background-color: rgb(249, 249, 249);
+  color: #000;
+  font-family: system-ui;
+  width: 100%;
+  height: 700px;
+  padding: 20px;
+  position: relative;
+}
+
+.slider-show {
+  position: absolute;
+  width: 95%;
+  height: 650px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(-60deg, #fff 50%, burlywood 50%);
+  overflow: hidden;
+}
+
+.directional {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  left: -1%;
+  text-align: center;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+}
+
+.directional button {
+  width: 50px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: none;
+  opacity: 0.2;
+}
+
+.directional button:hover {
+  opacity: 1;
+}
+
+#slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#slide .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#slide .item .image {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  opacity: 0;
+  transform: scale(3);
+  transition: 1.5s;
+}
+
+#slide .item .image img {
+  transition: 0.5s;
+}
+
+#slide .item .image::before {
+  position: absolute;
+  bottom: -25px;
+  height: 30px;
+  width: 35%;
+  background-color: #000;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(30px)
+}
+
+#slide .item .image img:hover {
+  transform: scale(1.1);
+}
+
+.content .left {
+  position: absolute;
+  left: 40px;
+  top: 15%;
+  display: none;
+}
+
+.content .left h1 {
+  font-size: xxx-large;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.content .left .des {
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0.6;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.content .left button {
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.content .left button:hover {
+
+  border-bottom: 2px solid red;
+}
+
+.content .left button i:nth-child(1) {
+  margin-left: 10px;
+}
+
+.content .right {
+  position: absolute;
+  right: 40px;
+  top: 15%;
+  display: none;
+}
+
+.content .right h2 {
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.content .right ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.content .right li {
+  font-size: 16px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.content .right li::before {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #8C0781;
+  content: '';
+  border-radius: 50%;
+  box-shadow: 0 0 10px #8C0781;
+}
+
+.content .right li p:nth-child(1) {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.content .right li p:nth-child(2) {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+#slide .item:nth-child(1) .image {
+  opacity: 0;
+  transform: scale(0) translate(-100px);
+}
+
+#slide .item:nth-child(2) .image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#slide .item:nth-child(2) {
+  z-index: 3;
+}
+
+@keyframes contentOut {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(0, -100%);
+    filter: blur(113px)
+  }
+}
+
+@keyframes contentIn {
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+    filter: blur(33px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+#slide .item:nth-child(1) .left,
+#slide .item:nth-child(1) .right,
+#slide .item:nth-child(2) .left,
+#slide .item:nth-child(2) .right {
+  display: block;
+}
+
+#slide .item:nth-child(1) .left,
+#slide .item:nth-child(1) .right {
+  animation: contentOut 1s ease-in-out 1 forwards
+}
+
+#slide .item:nth-child(2) .left,
+#slide .item:nth-child(2) .right {
+  animation: contentIn 1s ease-in-out 1 forwards
+}
+
+/* -------------
+  icon
+  ----------------*/
+
+.icon {
+  margin: 12px 100px;
+  padding: 30px;
+}
+
+.support img {
+  margin: 15px 20px;
+  width: 55px;
+  height: 55px;
+}
+
+.support {
+  display: flex;
+  position: relative;
+  left: 20px;
+}
+
+.support .sup-p {
+  margin-top: 5px;
+}
+
+.product-tab-list a {
+  margin: 0 11px;
+  text-decoration: none;
+}
+
+.product-tab-list a:hover {
+  text-decoration: none;
+}
+
+.product-tab-list {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.support:hover img {
+  animation: shake 0.5s;
+  animation-iteration-count: inherit;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -3px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 1px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 3px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -2px) rotate(2deg);
+  }
+
+  50% {
+    transform: translate(-2px, 3px) rotate(-2deg);
+  }
+
+  60% {
+    transform: translate(-3px, 2px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 2px) rotate(-2deg);
+  }
+
+  80% {
+    transform: translate(-2px, -2px) rotate(2deg);
+  }
+
+  90% {
+    transform: translate(2px, 3px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(2px, -3px) rotate(-2deg);
+  }
+}
+
+/*--------------------- 
+       product
+  ---------------------*/
+
+
+/*  */
+
+.nam-product {
+  box-sizing: border-box;
+  background-color: rgb(246, 246, 246);
+  padding: 20px;
+  font-family: Arial;
+}
+
+.nam-product .main {
+  max-width: 95%;
+  margin: auto;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+
+.nam-product .row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  display: none;
+  padding: 5px;
+
+}
+
+.column img {
+  width: 100%;
+
+}
+
+.column .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nam-product .content {
+  border: 1px solid burlywood;
+  border-radius: 8px;
+  background-image: linear-gradient(45deg, rgb(255, 252, 252) 70%, burlywood 30%);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.nam-product .content h4 {
+  color: rgb(6, 6, 6);
+  padding-top: 10px;
+  border-top: 1px solid rgb(255, 0, 0);
+}
+
+.nam-product .show {
+  display: block;
+}
+
+.nam-product .btn {
+  border: 2px solid burlywood;
+  border-radius: 5px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.nam-product .btn:hover {
+  background-color: #ddd;
+}
+
+.nam-product .btn.active {
+  background-color: burlywood;
+  color: white;
+}
+
+.nam-product .column img:hover {
+  transform: scale(1.3);
+}
+
+.nam-product .content-text a {
+  float: right;
+  color: red;
+  padding: 0 7px 7px 0;
+}
+
+/*  */
+.caroucel-nam {
+
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.caroucel-nam .item-nam {
+  display: block;
+}
+
+.caroucel-nam .item-nam span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.caroucel-nam.item-nam {
+  line-height: 50px;
+  position: relative;
+}
+
+.caroucel-nam .h4 h4 {
+  color: red;
+  font-weight: bold;
+  margin-top: 105px;
+}
+
+.caroucel-nam .h2 h2 {
+  font-weight: bold;
+  font-size: 28px;
+  padding: 15px 0;
+}
+
+.caroucel-nam .btn1 button {
+  width: 150px;
+  padding: 8px;
+  background-color: burlywood;
+  color: #000000;
+}
+
+.caroucel-nam .sp {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width:992px) {
+  .caroucel-nam .sp {
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+}
+
+.nam-but {
+  display: block;
+}
+
+.caroucel-nam .nam-sale {
+  position: relative;
+  margin: 10px;
+  top: 100px;
+}
+
+.caroucel-nam .nam-sale img {
+  width: 90%;
+  background: rgb(246, 246, 246);
+}
+.caroucel-nam .nam-sale img:hover{
+  transform: scale(1.1);
+}
+.caroucel-nam .span {
+  position: absolute;
+  background-color: black;
+  color: #ffffff;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.caroucel-nam .nam {
+  margin-top: 100px;
+  background: burlywood;
+  width: 250px;
+  height: 250px;
+}
+.namquang{
+  margin-left: 5%;
+}
+
+.caroucel-nam {
+  background: rgb(255, 255, 255);
+}
+
+.caroucel-nam .font-nam {
+  color: rgb(116, 124, 56);
+  opacity: 0.3;
+}
+
+/*--------------------- 
+  login register
+---------------------- */
+.backround-logis{
+ background-image: url('');
+ background-size: cover;
+ background-repeat: repeat;
+}
+.namlogin {
+  width: 450px;
+  height: 450px;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px 50px;
+  background-color: rgba(255,255,255,0);
+}
+
+.namlogin .btn1 {
+  position: relative;
+}
+
+.new .username1 {
+  margin: 30px 0;
+}
+
+.btn1 button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  padding: 10px;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn1 button:hover {
+  background: burlywood;
+}
+
+.nam-logback a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+.container_nam h1 {
+  text-align: center;
+}
+
+.nam-logback .form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+.checkbox1 {
+  margin: 30px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+ 
+
+.checkbox1 a {
+  float: right;
+  padding: 0;
+}
+
+.nam-logback {
+  height: 500px;
+  margin: 50px 500px;
+}
+
+/*  */
+.nam-regback {
+  width: 450px;
+  height: 450px;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px 50px;
+  background-color: rgba(255,255,255,0);
+}
+
+.nam-regback .btn1 button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  padding: 10px;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nam-regback .btn1 button:hover {
+  background: burlywood;
+}
+
+.nam-regback .container_nam a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+.container_nam h1 {
+  text-align: center;
+}
+
+.nam-regback .form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 30px;
+  border-bottom: 2px solid;
+}
+
+.nam-regback {
+  height: 500px;
+  margin: 50px 500px;
+}
+
+/*  */
+@media screen and (max-width:1600px) {
+  .nam-product .content {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .nam-product .content {
+    height: 410px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .nam-product .content {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .nam-product .content {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:768) {
+  .nam-product .content {
+    height: 350px;
+  }
+}
